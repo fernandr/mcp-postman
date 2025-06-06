@@ -1469,6 +1469,36 @@
       "originalText": "Deploys",
       "autoResize": true,
       "lineHeight": 1.25
+    },
+    {
+      "id": "7JdePhSIGlRdR4kbku8T6",
+      "type": "rectangle",
+      "x": 197.77778909098288,
+      "y": -3.723943074544195,
+      "width": 1574,
+      "height": 750,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "al",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 743332131,
+      "version": 115,
+      "versionNonce": 1254375107,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1749234599813,
+      "link": null,
+      "locked": false
     }
   ],
   "appState": {
