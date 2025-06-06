@@ -27,7 +27,7 @@ Login with an account > free plan.
 In Postman:
 
 - API network > MCP Generator
-- Search > openwheathermap (by API Evangelist)
+- Search > Openweathermap (by API Evangelist)
 - Select APIs > Add Requests
 - Generate
 - Download ZIP
@@ -45,7 +45,7 @@ In src:
 
 # Add API key
 
-API key is required to access the OpenWheather API (in this example).
+API key is required to access the OpenWeather API (in this example).
 
 In OpenWheather:
 
