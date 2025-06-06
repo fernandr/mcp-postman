@@ -4,7 +4,9 @@ Generate and deploy an MCP-server, and test it in a GPT-client.
 - Deploy as Node.js
 - Test in Cursor
 
-https://javascript.plainenglish.io/i-stopped-building-frontends-now-i-use-mcp-servers-to-let-ai-run-my-apps-178b0d7107ca
+Credits:
+
+- https://javascript.plainenglish.io/i-stopped-building-frontends-now-i-use-mcp-servers-to-let-ai-run-my-apps-178b0d7107ca
 
 # Install cursor IDE
 
