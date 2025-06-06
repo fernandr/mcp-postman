@@ -91,8 +91,8 @@ The models select the right tool and produce an answer:
 
 ## Deployment
 
-![](./Deployment.png)
+![](./Deployment.svg)
 
 ## Runtime
 
-![](./Runtime.png)
+![](./Runtime.svg)
