@@ -33,19 +33,21 @@ In Postman:
 - Download ZIP
 - Unzip ZIP
 
-# Build server
+# Build tool server
 
 In src:
 
     npm install
 
-# Run server
+# Run tool server
 
     node mcpServer.js
 
 # Add API key
 
-API key is required to access the OpenWeather API (in this example).
+The tool server requires an API key to access the underlying API.
+
+- In this example, we use the API of OpenWheather
 
 In OpenWheather:
 
@@ -61,7 +63,11 @@ Restart server:
 
     node mcpServer.js
 
-# Enable agent
+# Add MCP server
+
+The tool server is added (wrapped) as MCP server into an LLM orchestrator.
+
+- In this example, we use Cursor as an LLM orchestrator for test purposes
 
 In Cursor > cursor settings > MCP tools > New MCP Server.
 
