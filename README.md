@@ -6,10 +6,6 @@ Bring a model context protocol server (MCP) in action, and explain:
 
 The MCP server in this example connects to the OpenWeather API.
 
-Credits:
-
-- https://javascript.plainenglish.io/i-stopped-building-frontends-now-i-use-mcp-servers-to-let-ai-run-my-apps-178b0d7107ca
-
 Actions:
 
 - [Generate server](#generate-server)
@@ -29,7 +25,7 @@ Actions:
   - [Development](#development)
   - [Deployment](#deployment)
   - [Runtime](#runtime)
-
+- [Credits](#credits)
 
 # Generate server
 
@@ -146,3 +142,7 @@ Based on the question, the LLM internally reasons and decides which tool to use 
 ## Runtime
 
 ![](./Runtime.svg)
+
+# Credits
+
+- https://javascript.plainenglish.io/i-stopped-building-frontends-now-i-use-mcp-servers-to-let-ai-run-my-apps-178b0d7107ca
