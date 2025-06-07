@@ -1,12 +1,16 @@
-Generate and deploy an MCP-server, and test it in a GPT-client.
+Explain the application of MCP:
 
-- Generate from Postman
-- Deploy as Node.js
-- Test in Cursor
+- Generate a MCP server from Postman
+- Deploy the server
+- Test the server in Cursor (LLM orchestrator)
+
+The MCP server connects to the OpenWeather API.
 
 Credits:
 
 - https://javascript.plainenglish.io/i-stopped-building-frontends-now-i-use-mcp-servers-to-let-ai-run-my-apps-178b0d7107ca
+
+Actions as follows.
 
 # Install cursor IDE
 
@@ -33,46 +37,42 @@ In Postman:
 - Download ZIP
 - Unzip ZIP
 
-# Build tool server
+# Build MCP server
 
 In src:
 
     npm install
 
-# Run tool server
+# Run MCP server
 
     node mcpServer.js
 
 # Add API key
 
-The tool server requires an API key to access the underlying API.
+The MCP server requires an API key to access the underlying API.
 
-- In this example, we use the OpenWheather API
+- In this example, we use the OpenWeather API
 
-In OpenWheather:
+In OpenWeather:
 
-- Create account or sign-in
-- Copy API key
+- Create an account or sign-in
+- Copy the API key
 - https://openweathermap.org/api
 
-In src/.env:
+In src/.env (not checked in):
 
-- Paste API key (OPENWEATHERMAP_API_KEY)
+- OPENWEATHERMAP_API_KEY=your_copied_key
 
 Restart server:
 
     node mcpServer.js
 
-# Add MCP server
+# Add MCP server to LLM orchestrator
 
-The tool server is added (wrapped) as MCP server into an LLM orchestrator.
+In this example, we use Cursor as orchestrator (for testing purposes)
 
-- In this example, we use Cursor (for testing purposes)
-
-In Cursor > cursor settings > MCP tools > New MCP Server.
-
-Add args: "your-dir/mcpServer.js".
-
+- In Cursor > cursor settings > MCP tools > New MCP Server.
+- Add args: "your-dir/mcpServer.js".
 - your-dir = where you unzipped the mcpServer
 
 Observe a green dot, indicating that the "tools" (i.e. the wrapped APIs) in the MCP-server are enabled.
