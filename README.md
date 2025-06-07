@@ -47,7 +47,7 @@ In src:
 
 The tool server requires an API key to access the underlying API.
 
-- In this example, we use the API of OpenWheather
+- In this example, we use the OpenWheather API
 
 In OpenWheather:
 
@@ -67,7 +67,7 @@ Restart server:
 
 The tool server is added (wrapped) as MCP server into an LLM orchestrator.
 
-- In this example, we use Cursor as an LLM orchestrator for test purposes
+- In this example, we use Cursor (for testing purposes)
 
 In Cursor > cursor settings > MCP tools > New MCP Server.
 
