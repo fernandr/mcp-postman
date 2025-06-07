@@ -12,21 +12,19 @@ Credits:
 
 Actions as follows.
 
-# Install cursor IDE
+# Generate MCP server
 
-https://www.cursor.com/
-
-# Install Postman
+## Install Postman
 
     sudo snap install postman
 
-# Start Postman
+## Start Postman
 
     postman
 
 Login with an account > free plan.
 
-# Generate MCP server
+## Generate
 
 In Postman:
 
@@ -47,11 +45,13 @@ In src:
 
 # Run MCP server
 
+## Start
+
     node mcpServer.js
 
-# Extend MCP server with API key
+## Extend
 
-The MCP server requires an API key to access the underlying API.
+Extend the MCP server with an API key, in order to access the underlying API.
 
 - In this example, we use the OpenWeather API
 
@@ -65,11 +65,25 @@ In src/.env (not checked in):
 
 - OPENWEATHERMAP_API_KEY=your_copied_key
 
-Restart server:
+## Restart
 
     node mcpServer.js
 
-# Configure LLM orchestrator
+# Test MCP server
+
+Test in LLM orchestrator (Cursor).
+
+## Install Cursor
+
+Install:
+
+https://www.cursor.com/
+
+Observe preconfigured models:
+
+- Cursor settings > Models
+
+## Add MCP server
 
 Add MCP server to LLM orchestrator.
 
@@ -84,17 +98,13 @@ Observe a green dot, indicating that the MCP-server is ready to use.
 
 - Sometimes selecting the disable/enable switch is required
 
-# Test agent
-
-In cursor, observe models:
-
-- Cursor settings > Models
+## Ask a question
 
 Ask a question to the models:
 
 - Ctrl-I > "What's the wheather in Amsterdam" > Accept
 
-Based on the question, the LLM reasons and decides which tool to use in order to produce an answer.
+Based on the question, the LLM internally reasons and decides which tool to use in order to produce an answer.
 
 ![](./Result.png)
 
