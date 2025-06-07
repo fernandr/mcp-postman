@@ -4,9 +4,7 @@ Bring a model context protocol server (MCP) in action, and explain:
 - Deploy the server
 - Test the server in Cursor (LLM orchestrator)
 
-The MCP server in this example connects to the OpenWeather API.
-
-Actions:
+The MCP server in this example connects to the OpenWeather API:
 
 - [Generate server](#generate-server)
   - [Install Postman](#install-postman)
