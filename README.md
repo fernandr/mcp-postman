@@ -1,4 +1,4 @@
-Explain the application of MCP:
+Bring a model context protocol (MCP) server in action, and explain:
 
 - Generate a MCP server from Postman
 - Deploy the server
@@ -16,11 +16,11 @@ Actions as follows.
 
 https://www.cursor.com/
 
-# Install postman
+# Install Postman
 
     sudo snap install postman
 
-# Start postman
+# Start Postman
 
     postman
 
@@ -37,6 +37,8 @@ In Postman:
 - Download ZIP
 - Unzip ZIP
 
+The selected API-requests are "tools" that an LLM can use.
+
 # Build MCP server
 
 In src:
@@ -47,7 +49,7 @@ In src:
 
     node mcpServer.js
 
-# Add API key
+# Extend MCP server with API key
 
 The MCP server requires an API key to access the underlying API.
 
@@ -67,15 +69,18 @@ Restart server:
 
     node mcpServer.js
 
-# Add MCP server to LLM orchestrator
+# Configure LLM orchestrator
 
-In this example, we use Cursor as orchestrator (for testing purposes)
+Add MCP server to LLM orchestrator.
 
-- In Cursor > cursor settings > MCP tools > New MCP Server.
-- Add args: "your-dir/mcpServer.js".
-- your-dir = where you unzipped the mcpServer
+- The configured LLMs will receive the MCP server as context
 
-Observe a green dot, indicating that the "tools" (i.e. the wrapped APIs) in the MCP-server are enabled.
+In this example, we use Cursor as LLM orchestrator (for testing purposes)
+
+- In Cursor, select Cursor Settings > MCP tools > New MCP Server
+- Add args: "your-dir/mcpServer.js" (where you unzipped the mcpServer)
+
+Observe a green dot, indicating that the MCP-server is ready to use.
 
 - Sometimes selecting the disable/enable switch is required
 
@@ -89,7 +94,7 @@ Ask a question to the models:
 
 - Ctrl-I > "What's the wheather in Amsterdam" > Accept
 
-The models select the right tool and produce an answer:
+Based on the question, the LLM reasons and decides which tool to use in order to produce an answer.
 
 ![](./Result.png)
 
