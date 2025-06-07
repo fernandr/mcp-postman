@@ -10,9 +10,30 @@ Credits:
 
 - https://javascript.plainenglish.io/i-stopped-building-frontends-now-i-use-mcp-servers-to-let-ai-run-my-apps-178b0d7107ca
 
-Actions as follows.
+Actions:
 
-# Generate MCP server
+- [Generate server](#generate-server)
+  - [Install Postman](#install-postman)
+  - [Start Postman](#start-postman)
+  - [Generate](#generate)
+- [Build server](#build-server)
+- [Run server](#run-server)
+  - [Start](#start)
+  - [Configure](#configure)
+  - [Restart](#restart)
+- [Test server](#test-server)
+  - [Install orchestrator](#install-orchestrator)
+  - [Configure](#configure-1)
+  - [Test](#test)
+- [Design](#design)
+  - [Development](#development)
+  - [Deployment](#deployment)
+  - [Runtime](#runtime)
+
+
+# Generate server
+
+Generate an MCP server by using Postman as a tool.
 
 ## Install Postman
 
@@ -37,19 +58,23 @@ In Postman:
 
 The selected API-requests are "tools" that an LLM can use.
 
-# Build MCP server
+# Build server
+
+Build the MCP server.
 
 In src:
 
     npm install
 
-# Run MCP server
+# Run server
+
+Start the MCP server and add an API key to access the underlying API.
 
 ## Start
 
     node mcpServer.js
 
-## Extend
+## Configure
 
 Extend the MCP server with an API key, in order to access the underlying API.
 
@@ -69,13 +94,13 @@ In src/.env (not checked in):
 
     node mcpServer.js
 
-# Test MCP server
+# Test server
 
-Test in LLM orchestrator (Cursor).
+Test the MCP server in an LLM orchestrator (Cursor).
 
-## Install Cursor
+## Install orchestrator
 
-Install:
+Install Cursor:
 
 https://www.cursor.com/
 
@@ -83,7 +108,7 @@ Observe preconfigured models:
 
 - Cursor settings > Models
 
-## Add MCP server
+## Configure
 
 Add MCP server to LLM orchestrator.
 
@@ -98,7 +123,7 @@ Observe a green dot, indicating that the MCP-server is ready to use.
 
 - Sometimes selecting the disable/enable switch is required
 
-## Ask a question
+## Test
 
 Ask a question to the models:
 
