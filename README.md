@@ -89,6 +89,10 @@ The models select the right tool and produce an answer:
 
 # Design
 
+## Development
+
+![](./Development.svg)
+
 ## Deployment
 
 ![](./Deployment.svg)
